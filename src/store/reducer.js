@@ -10,8 +10,8 @@ const initialState = {
   
     switch (type) {
       case ADD_TASK: {
-        const newState = { ...state, showError: false }
-        newState.taskList.push(payload);
+        const newState = { taskList :[...state.taskList,payload], showError: false }
+        console.log(payload,'payload');
         console.log(newState,'newState');
         return newState
       }

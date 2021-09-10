@@ -15,6 +15,7 @@ export function* fetchUser(action) {
   
   export function* watchFetchUser() {
     // delay(4000);
+    console.log("test")
     yield takeEvery(USER_FETCH_REQUESTED, fetchUser)
   }
   
